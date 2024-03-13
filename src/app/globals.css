@@ -2,32 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/* for about page  */
+@layer components {
+    .iconSelf {
+        @apply w-5 h-5 rounded-full bg-slate-200 text-2xl;
+    }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+    .headerLink {
+        @apply mx-2 mb-1 whitespace-nowrap text-blue-600 hover:text-orange-800;
+    }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .skillBox {
+        @apply rounded-xl border-2 border-purple-700 bg-purple-300 p-2 text-center text-lg font-semibold hover:text-xl/[1] hover:shadow-2xl hover:shadow-purple-700;
+    }
+
+    .skillIcon{
+        @apply my-2 flex justify-center text-5xl;
+    }
+
+    .mainHeading {
+        text-shadow: 5px 5px 5px #312e8150;
+        font-size: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        animation:
+            typewriter 2s steps(14) infinite alternate,
+            blink 500ms steps(14) infinite normal;
+        border-right: 5px solid black;
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 110%;
+        }
+    }
+
+    @keyframes blink {
+        from {
+            border-color: black;
+        }
+
+        to {
+            border-color: transparent;
+        }
+    }
 }
