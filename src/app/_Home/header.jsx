@@ -53,9 +53,15 @@ const Header = () => {
           </Link> */}
 
           <Link
-            href={'/Certificates'}
-            className={`${pathname.startsWith('/Certificates') ? 'text-orange-600' : 'text-blue-600'} headerLink`}>
-            Certificates
+            href={'/Badges'}
+            className={`${pathname.startsWith('/Badges') ? 'text-orange-600' : 'text-blue-600'} headerLink`}>
+            Badges
+          </Link>
+
+          <Link
+            href={'/Certifications'}
+            className={`${pathname.startsWith('/Certifications') ? 'text-orange-600' : 'text-blue-600'} headerLink`}>
+            Certifications
           </Link>
         </ul>
 

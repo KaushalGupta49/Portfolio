@@ -14,10 +14,18 @@ import { Autoplay, Mousewheel, Pagination, Navigation } from 'swiper/modules';
 export default function Carousel(props) {
     const getCerticates = (item, index) => {
         return (
-            <SwiperSlide key={index} className="mt-10 mb-5">
-                <Image height={500} quality={90} src={item} alt='certificate' className="mx-auto" />
-            </SwiperSlide>
-        )
+          <SwiperSlide key={index} className='mb-5 mt-10'>
+            <a href={item.url}>
+              <Image
+                height={500}
+                quality={90}
+                src={item.img}
+                alt='certificate'
+                className='mx-auto'
+              />
+            </a>
+          </SwiperSlide>
+        );
     };
 
     return (

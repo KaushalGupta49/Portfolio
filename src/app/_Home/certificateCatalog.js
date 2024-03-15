@@ -1,6 +1,5 @@
-import digitalLeaderCertificates from '@/images/Certificates/GoogleDigitalLeader/GoogleDigitalLeader';
-import metaCertificate from '@/images/Certificates/MetaCertificate/MetaCertificate';
-
+import digitalLeaderCertificates from '@/app/Certifications/CertificateList/GoogleDigitalLeader';
+import metaCertificate from '@/app/Certifications/CertificateList/MetaCertificate';
 
 const dataCertificates = metaCertificate.concat(digitalLeaderCertificates);
 

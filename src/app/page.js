@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Carousel from '../components/Carousel';
 
-// import profileImage from '@/images/myImage.jpg';
-import profileImage2 from '@/images/myImagewbg.png';
-import background from '@/images/back.avif';
+// import profileImage from '@/app/images/myImage.jpg';
+import profileImage2 from '@/app/images/myImagewbg.png';
+import background from '@/app/images/background.avif';
 import Skills from './_Home/skills';
 
 import dataCertificates from '@/app/_Home/certificateCatalog';
@@ -16,16 +16,10 @@ export default function App() {
       <Image
         src={background}
         alt='background'
-        layout='fill'
-        objectFit='cover'
-        className='-z-10'
+        fill={true}
+        className='-z-10 object-cover'
       />
       <div className='z-10 flex flex-row flex-wrap justify-center'>
-        {/* <Image
-          src={profileImage}
-          alt='creatorImage'
-          className='m-10 w-[380px] rounded-full shadow-2xl shadow-indigo-900 sm:w-[500px]'
-        /> */}
         <Image
           src={profileImage2}
           alt='creatorImage'
