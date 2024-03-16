@@ -9,6 +9,23 @@
         @apply w-5 h-5 rounded-full bg-slate-200 text-2xl;
     }
 
+    /* ---- tooltip CSS ---- */
+    .tooltip {
+        @apply relative inline-block;
+    }
+
+    .tooltip .tooltiptext {
+        @apply invisible w-[20px] bg-slate-400/30 text-black text-center rounded-md p-1 text-sm;
+        /* Position the tooltip */
+        @apply absolute z-[1px] w-28 top-[150%] left-1/2 -ml-14;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    /* ---- tooltip CSS ending ---- */
+
     .headerLink {
         @apply mx-2 mb-1 whitespace-nowrap text-blue-600 hover:text-orange-800;
     }
@@ -17,7 +34,7 @@
         @apply rounded-xl border-2 border-purple-700 bg-purple-300 p-2 text-center text-lg font-semibold hover:text-xl/[1] hover:shadow-2xl hover:shadow-purple-700;
     }
 
-    .skillIcon{
+    .skillIcon {
         @apply my-2 flex justify-center text-5xl;
     }
 

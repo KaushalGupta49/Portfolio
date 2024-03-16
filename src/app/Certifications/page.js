@@ -3,6 +3,7 @@ import Carousel from '../../components/Carousel';
 import metaCertificate from '@/app/Certifications/CertificateList/MetaCertificate';
 import digitalLeaderCertificates from '@/app/Certifications/CertificateList/GoogleDigitalLeader';
 import JavaLearnQuest from '@/app/Certifications/CertificateList/JavaLearnQuest';
+import IBM from '@/app/Certifications/CertificateList/IBM';
 
 export const metadata = {
   title: 'Certificates',
@@ -31,6 +32,13 @@ export default function page() {
         <Carousel certificates={JavaLearnQuest} mousewheel={false} />
         <h1 className='text-semibold my-4 text-center text-2xl'>
           Core Java by LearnQuest
+        </h1>
+      </>
+
+      <>
+        <Carousel certificates={IBM} mousewheel={false} />
+        <h1 className='text-semibold my-4 text-center text-2xl'>
+          JavaScript BackEnd Developer
         </h1>
       </>
     </div>

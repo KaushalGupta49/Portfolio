@@ -8,6 +8,9 @@ import META from './badgeImages/meta-front-end-developer-certificate.png';
 //AWS
 import AWS from './badgeImages/aws-academy-graduate-aws-academy-cloud-foundations.png';
 
+//Postman
+import POSTMAN from './badgeImages/Postman API Fundamentals Student Expert.png';
+
 //IBM
 import SE from './badgeImages/software-engineering-essentials.png';
 import WEB from './badgeImages/web-development-with-html-css-javascript-essentials.png';
@@ -17,10 +20,15 @@ import EXPRESS from './badgeImages/node-and-express-essentials.png';
 import LINUX from './badgeImages/linux-commands-shell-scripting-essentials.png';
 import CNDANSE from './badgeImages/cloud-native-devops-agile-nosql-essentials.png';
 
+
 const badgeData = [
   {
     name: META,
     url: 'https://www.credly.com/badges/7365950c-3ef8-465f-93be-f6ff26b55221/public_url',
+  },
+  {
+    name: POSTMAN,
+    url: 'https://api.badgr.io/public/assertions/4wmKraykTxK8Gj6BF2MpDg',
   },
   {
     name: AWS,
