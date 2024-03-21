@@ -6,8 +6,8 @@ import JavaLearnQuest from '@/app/Certifications/CertificateList/JavaLearnQuest'
 import IBM from '@/app/Certifications/CertificateList/IBM';
 
 export const metadata = {
-  title: 'Certificates',
-  description: 'PortFolio of Kaushal Gupta',
+  title: 'Certifications',
+  description: 'Certifications achieved by KAUSHAL GUPTA',
   author: 'Kaushal Gupta',
 };
 

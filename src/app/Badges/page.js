@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import badgeData from './badgeData';
 
+export const metadata = {
+  title: 'Badges',
+  description: 'Badges achieved by KAUSHAL GUPTA',
+  author: 'Kaushal Gupta',
+};
+
 function getBadge(item) {
   return (
     <a
