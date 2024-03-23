@@ -17,9 +17,9 @@ import WEB from './badgeImages/web-development-with-html-css-javascript-essentia
 import JSEssential from './badgeImages/javascript-programming-essentials.png';
 import GIT from './badgeImages/git-and-github-essentials.1.png';
 import EXPRESS from './badgeImages/node-and-express-essentials.png';
+import EXPRESS_INTERMEDIATE from './badgeImages/intermediate-back-end-development-node-mongodb.png';
 import LINUX from './badgeImages/linux-commands-shell-scripting-essentials.png';
 import CNDANSE from './badgeImages/cloud-native-devops-agile-nosql-essentials.png';
-
 
 const badgeData = [
   {
@@ -29,10 +29,6 @@ const badgeData = [
   {
     name: POSTMAN,
     url: 'https://api.badgr.io/public/assertions/4wmKraykTxK8Gj6BF2MpDg',
-  },
-  {
-    name: AWS,
-    url: 'https://www.credly.com/badges/141f3710-f7c1-412b-8cb5-f53221228176/public_url',
   },
   {
     name: SE,
@@ -59,8 +55,16 @@ const badgeData = [
     url: 'https://www.credly.com/badges/e147ae02-ebbc-4949-85ad-a9fba9fb252c/public_url',
   },
   {
+    name: EXPRESS_INTERMEDIATE,
+    url: 'https://www.credly.com/badges/042152c3-9e53-478d-80d3-912ad1870da9/public_url',
+  },
+  {
     name: CNDANSE,
     url: 'https://www.credly.com/badges/890e5130-d6f2-4b80-9f98-cf2d807bfdd3/public_url',
+  },
+  {
+    name: AWS,
+    url: 'https://www.credly.com/badges/141f3710-f7c1-412b-8cb5-f53221228176/public_url',
   },
   {
     name: PYTHON1,

@@ -1,5 +1,6 @@
-import Carousel from '../../components/Carousel';
+import BasicModalCarousel from '../../components/Modal';
 
+//import Certificates lists
 import metaCertificate from '@/app/Certifications/CertificateList/MetaCertificate';
 import digitalLeaderCertificates from '@/app/Certifications/CertificateList/GoogleDigitalLeader';
 import JavaLearnQuest from '@/app/Certifications/CertificateList/JavaLearnQuest';
@@ -13,34 +14,26 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className='bg-purple-100/50'>
-      <>
-        <Carousel certificates={metaCertificate} mousewheel={false} />
-        <h1 className='text-semibold my-4 text-center text-2xl'>
-          Meta Front-End Developer
-        </h1>
-      </>
+    <div className='flex flex-row flex-wrap bg-purple-100/50 pt-10'>
+      <BasicModalCarousel
+        certificate={metaCertificate}
+        name={'Meta Front-End Developer'}
+      />
 
-      <>
-        <Carousel certificates={digitalLeaderCertificates} mousewheel={false} />
-        <h1 className='text-semibold my-4 text-center text-2xl'>
-          Google Cloud Digital Leader Training
-        </h1>
-      </>
+      <BasicModalCarousel
+        certificate={digitalLeaderCertificates}
+        name={'Google Digital Leader Training'}
+      />
 
-      <>
-        <Carousel certificates={JavaLearnQuest} mousewheel={false} />
-        <h1 className='text-semibold my-4 text-center text-2xl'>
-          Core Java by LearnQuest
-        </h1>
-      </>
+      <BasicModalCarousel
+        certificate={JavaLearnQuest}
+        name={'CORE JAVA by LearnQuest'}
+      />
 
-      <>
-        <Carousel certificates={IBM} mousewheel={false} />
-        <h1 className='text-semibold my-4 text-center text-2xl'>
-          JavaScript BackEnd Developer
-        </h1>
-      </>
+      <BasicModalCarousel
+        certificate={IBM}
+        name={'IBM JavaScript Backend Developer'}
+      />
     </div>
   );
 }

@@ -7,6 +7,7 @@ const inter = Montserrat({subsets: ['latin']});
 export const metadata = {
   title: 'Kaushal Gupta',
   description: 'PortFolio of Kaushal Gupta',
+  author: 'Kaushal Gupta',
 };
 
 export default function RootLayout({children}) {
