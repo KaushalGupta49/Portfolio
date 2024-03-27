@@ -17,17 +17,6 @@ import {
 } from 'react-icons/bi';
 // import {BsBootstrap} from 'react-icons/bs';
 
-function getSkillBlock(item, index) {
-  return (
-    <div className='skillBox' key={index}>
-      <div className='skillIcon'>
-        <item.img />
-      </div>
-      <div>{item.name}</div>
-    </div>
-  );
-}
-
 export default function Skills() {
   const skillSet = [
     {name: 'HTML', img: FaHtml5},
@@ -38,15 +27,26 @@ export default function Skills() {
     {name: 'Node', img: DiNodejs},
     {name: 'Npm', img: DiNpm},
     {name: 'MongoDB', img: BiLogoMongodb},
-    {name: 'Docker', img: BiLogoDocker},
     {name: 'Git', img: BiLogoGit},
     {name: 'GitHub', img: FaSquareGithub},
     {name: 'Linux', img: FaLinux},
+    {name: 'Docker', img: BiLogoDocker},
     {name: 'Python', img: FaPython},
     {name: 'Java', img: FaJava},
     // {name: 'Bootstrap', img: BsBootstrap},
     // { name: 'C', img: 'fa-c' },
   ];
+
+  function getSkillBlock(Item) {
+    return (
+      <div className='skillBox' key={Item.name}>
+        <div className='skillIcon'>
+          <Item.img />
+        </div>
+        <div>{Item.name}</div>
+      </div>
+    );
+  }
 
   return (
     <div className='mt-10 p-5'>

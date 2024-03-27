@@ -4,7 +4,7 @@ import gdl2 from '../CertificatesImages/GoogleDigitalLeader/2.jpg';
 import gdl3 from '../CertificatesImages/GoogleDigitalLeader/3.jpg';
 import gdl4 from '../CertificatesImages/GoogleDigitalLeader/4.jpg';
 
-const digitalLeaderCertificates = [
+const DigitalLeaderCertificates = [
   {img: gdl0, url: '/'},
   {img: gdl1, url: '/'},
   {img: gdl2, url: '/'},
@@ -12,4 +12,4 @@ const digitalLeaderCertificates = [
   {img: gdl4, url: '/'},
 ];
 
-export default digitalLeaderCertificates;
+export default DigitalLeaderCertificates;

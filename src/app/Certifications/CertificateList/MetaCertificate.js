@@ -9,7 +9,7 @@ import mf7 from '../CertificatesImages/MetaCertificate/7.jpg';
 import mf8 from '../CertificatesImages/MetaCertificate/8.jpg';
 import mf9 from '../CertificatesImages/MetaCertificate/9.jpg';
 
-const metaCertificate = [
+const MetaCertificate = [
   {img: mf0, url: '/'},
   {img: mf1, url: '/'},
   {img: mf2, url: '/'},
@@ -22,4 +22,4 @@ const metaCertificate = [
   {img: mf9, url: '/'},
 ];
 
-export default metaCertificate;
+export default MetaCertificate;

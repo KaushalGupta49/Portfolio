@@ -1,10 +1,11 @@
 import BasicModalCarousel from '../../components/Modal';
 
 //import Certificates lists
-import metaCertificate from '@/app/Certifications/CertificateList/MetaCertificate';
-import digitalLeaderCertificates from '@/app/Certifications/CertificateList/GoogleDigitalLeader';
+import MetaCertificate from '@/app/Certifications/CertificateList/MetaCertificate';
+import DigitalLeaderCertificates from '@/app/Certifications/CertificateList/GoogleDigitalLeader';
 import JavaLearnQuest from '@/app/Certifications/CertificateList/JavaLearnQuest';
 import IBM from '@/app/Certifications/CertificateList/IBM';
+import GoogleCybersecurity from '@/app/Certifications/CertificateList/GoogleCybersecurity';
 
 export const metadata = {
   title: 'Certifications',
@@ -14,14 +15,14 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className='flex flex-row flex-wrap bg-purple-100/50 pt-10'>
+    <div className='flex flex-row flex-wrap justify-center gap-4 bg-purple-100/50 pt-10'>
       <BasicModalCarousel
-        certificate={metaCertificate}
+        certificate={MetaCertificate}
         name={'Meta Front-End Developer'}
       />
 
       <BasicModalCarousel
-        certificate={digitalLeaderCertificates}
+        certificate={DigitalLeaderCertificates}
         name={'Google Digital Leader Training'}
       />
 
@@ -33,6 +34,11 @@ export default function page() {
       <BasicModalCarousel
         certificate={IBM}
         name={'IBM JavaScript Backend Developer'}
+      />
+
+      <BasicModalCarousel
+        certificate={GoogleCybersecurity}
+        name={'Google Cybersecurity'}
       />
     </div>
   );

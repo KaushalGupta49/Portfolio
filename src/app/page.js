@@ -5,6 +5,7 @@ import Carousel from '../components/Carousel';
 import profileImage2 from '@/app/images/myImagewbg.png';
 import background from '@/app/images/background.avif';
 import Skills from './_Home/skills';
+import Education from './_Home/education';
 
 import dataCertificates from '@/app/_Home/certificateCatalog';
 
@@ -85,6 +86,7 @@ export default function App() {
         </div>
       </div>
       <Carousel certificates={dataCertificates} mousewheel={true} />
+      <Education />
       <Skills />
     </div>
   );

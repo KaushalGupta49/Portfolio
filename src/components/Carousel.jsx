@@ -15,7 +15,7 @@ export default function Carousel(props) {
   const getCerticates = (item, index) => {
     return (
       <SwiperSlide key={index} className='mb-5 mt-10'>
-        <a href={item.url}>
+        <a href={item.url} target='_blank'>
           <Image
             height={500}
             quality={90}
