@@ -8,44 +8,62 @@ const Education = () => {
       <h1 className='mb-10 text-center text-5xl font-semibold'>Education</h1>
 
       <div className='flex flex-col items-center justify-center gap-5'>
-        <div className='flex flex-row gap-7 rounded-3xl bg-purple-500/20 p-5 px-20'>
+        <div className='flex flex-row items-center gap-5 rounded-3xl bg-purple-500/20 p-2 py-5'>
           <Image
             src={dgiLogo}
-            width={250}
-            height={250}
+            width={130}
+            height={130}
             alt='dgi logo'
-            className='rounded-full border-2'
+            className='rounded-full border-2 sm:w-[180px] md:w-[250px]'
           />
           <div className='flex flex-col items-start justify-center'>
-            <h1 className='text-2xl font-semibold'>
+            <h1 className='text-md font-semibold sm:text-2xl'>
               Dronacharya Group of Institutions
             </h1>
-            <h2 className='text-lg font-medium'>
+            <h2 className='text-sm font-medium sm:text-lg'>
               Bachelor of Technology, B.Tech
             </h2>
-            <h2 className='text-lg font-medium'>CPGA : 7.415 / 10</h2>
+            <h2 className='text-sm font-medium sm:text-lg'>
+              CPGA : 7.415 / 10
+            </h2>
           </div>
         </div>
 
-        <div className='flex flex-row gap-7 rounded-3xl bg-purple-500/20 p-5 px-20'>
+        <div className='flex flex-row items-center gap-5 rounded-3xl bg-purple-500/20 p-2 py-5'>
           <div className='flex flex-col items-end justify-center'>
-            <h1 className='text-2xl font-semibold'>
+            <h1 className='text-md text-right font-semibold sm:text-2xl'>
               N M Public School, Greater Noida
             </h1>
-            <h2 className='text-lg font-medium'>INTERMEDIATE SCHOOL</h2>
-            <h2 className='text-lg font-medium'>Percentage : 81%</h2>
+            <h2 className='text-right text-sm font-medium sm:text-lg'>
+              INTERMEDIATE SCHOOL
+            </h2>
+            <h2 className='text-sm font-medium sm:text-lg'>Percentage : 81%</h2>
           </div>
-          <Image src={cbselogo} width={250} height={250} alt='cbse logo' />
+          <Image
+            src={cbselogo}
+            width={130}
+            height={130}
+            alt='cbse logo'
+            className='sm:w-[180px] md:w-[250px]'
+          />
         </div>
 
-        <div className='flex flex-row gap-7 rounded-3xl bg-purple-500/20 p-5 px-20'>
-          <Image src={cbselogo} width={250} height={250} alt='cbse logo' />
+        <div className='flex flex-row items-center gap-5 rounded-3xl bg-purple-500/20 p-2 py-5'>
+          <Image
+            src={cbselogo}
+            width={130}
+            height={130}
+            alt='cbse logo'
+            className='sm:w-[180px] md:w-[250px]'
+          />
           <div className='flex flex-col items-start justify-center'>
-            <h1 className='text-2xl font-semibold'>
+            <h1 className='text-md font-semibold sm:text-2xl'>
               N M Public School, Greater Noida
             </h1>
-            <h2 className='text-lg font-medium'>HIGH SCHOOL</h2>
-            <h2 className='text-lg font-medium'>Percentage : 80.5%</h2>
+            <h2 className='text-sm font-medium sm:text-lg'>HIGH SCHOOL</h2>
+            <h2 className='text-sm font-medium sm:text-lg'>
+              Percentage : 80.5%
+            </h2>
           </div>
         </div>
       </div>
