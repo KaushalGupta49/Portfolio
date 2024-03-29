@@ -22,6 +22,7 @@ export default function Carousel(props) {
             src={item.img}
             alt={item.url}
             className='mx-auto'
+            priority={false}
           />
         </a>
       </SwiperSlide>
@@ -58,6 +59,9 @@ export default function Carousel(props) {
       modules={[Autoplay, Mousewheel, Pagination, Navigation]}
       className='mySwiper'>
       {props.certificates.map(getCerticates)}
+      <h1 className='text-semibold my-4 text-center text-2xl text-white'>
+        {props.name}
+      </h1>
     </Swiper>
   );
 }

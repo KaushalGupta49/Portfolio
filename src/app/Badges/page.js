@@ -20,6 +20,8 @@ function getBadge(item) {
         height={200}
         quality={60}
         alt='express'
+        loading='lazy'
+        priority={false}
       />
     </a>
   );

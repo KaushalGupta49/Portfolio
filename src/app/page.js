@@ -14,16 +14,18 @@ import {SiHackerrank, SiLeetcode} from 'react-icons/si';
 
 export default function App() {
   return (
-    <div className='bg-purple-200/30'>
+    <div className='static bg-purple-200/30'>
       <Image
         src={background}
         alt='background'
         fill={true}
         className='-z-10 object-cover object-right'
+        loading='lazy'
       />
       <div className='z-10 flex flex-row flex-wrap justify-center bg-white/40 md:bg-transparent'>
         <Image
           src={profileImage2}
+          priority={true}
           alt='creatorImage'
           className='my-5 w-[380px] rounded-full bg-slate-500/10 shadow-2xl sm:w-[500px] lg:order-last'
         />
@@ -38,7 +40,7 @@ export default function App() {
 
           <div className='flex justify-evenly p-3'>
             <a
-              href='https://www.linkedin.com/in/kaushal-gupta-1049/'
+              href='https://www.linkedin.com/in/kaushalgupta2003/'
               target='_blank'>
               <button className='iconSelf tooltip'>
                 <FaLinkedinIn />
@@ -85,7 +87,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <Carousel certificates={dataCertificates} mousewheel={true} />
+      <Carousel certificates={dataCertificates} mousewheel={true} name={''} />
       <Education />
       <Skills />
     </div>

@@ -25,14 +25,15 @@ export default function BasicModalCarousel(props) {
         aria-labelledby='modal-modal-title'
         aria-describedby='modal-modal-description'
         sx={{
-          position: 'absolute',
-          top: '20%',
+          display: 'flex',
+          alignItems: 'center',
         }}>
         <>
-          <Carousel certificates={props.certificate} mousewheel={true} />
-          <h1 className='text-semibold my-4 text-center text-2xl text-white'>
-            {props.name}
-          </h1>
+          <Carousel
+            certificates={props.certificate}
+            mousewheel={true}
+            name={props.name}
+          />
         </>
       </Modal>
     </div>
