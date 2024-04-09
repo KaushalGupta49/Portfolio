@@ -23,7 +23,6 @@
     .tooltip:hover .tooltiptext {
         visibility: visible;
     }
-
     /* ---- tooltip CSS ending ---- */
 
     .headerLink {
@@ -31,7 +30,7 @@
     }
 
     .skillBox {
-        @apply rounded-xl border-2 border-purple-700 bg-purple-300 p-2 text-center text-lg font-semibold hover:text-xl/[1] hover:shadow-2xl hover:shadow-purple-700;
+        @apply rounded-xl border-2 border-purple-700 bg-purple-300 p-2 text-center text-lg font-semibold hover:shadow-2xl hover:shadow-purple-700;
     }
 
     .skillIcon {

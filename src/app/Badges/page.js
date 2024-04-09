@@ -19,9 +19,8 @@ function getBadge(item) {
         width={200}
         height={200}
         quality={60}
-        alt='express'
+        alt='badge'
         loading='lazy'
-        priority={false}
       />
     </a>
   );
@@ -29,7 +28,7 @@ function getBadge(item) {
 
 export default function page() {
   return (
-    <div className='bg-purple-300/10'>
+    <div className='bg-purple-100/40 py-10'>
       <h1 className='pt-5 text-center text-4xl font-semibold'>
         I have Earned a total of{' '}
         <span className='text-nowrap'>

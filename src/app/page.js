@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Carousel from '../components/Carousel';
 
 // import profileImage from '@/app/images/myImage.jpg';
-import profileImage2 from '@/app/images/myImagewbg.png';
-import background from '@/app/images/background.avif';
+import profileImage from '@/app/images/myImagewbg.png';
+import background from '@/app/images/backgroung.png';
 import Skills from './_Home/skills';
 import Education from './_Home/education';
 
@@ -14,20 +14,20 @@ import {SiHackerrank, SiLeetcode} from 'react-icons/si';
 
 export default function App() {
   return (
-    <div className='static bg-purple-200/30'>
-      <Image
-        src={background}
-        alt='background'
-        fill={true}
-        className='-z-10 object-cover object-right'
-        loading='lazy'
-      />
-      <div className='z-10 flex flex-row flex-wrap justify-center bg-white/40 md:bg-transparent'>
+    <div className='bg-purple-200/30'>
+      <div className='relative z-0 flex flex-row flex-wrap justify-center'>
         <Image
-          src={profileImage2}
+          src={background}
+          alt='background'
+          fill={true}
+          className='-z-20 object-cover object-right blur-[1.1px]'
+          priority
+        />
+        <Image
+          src={profileImage}
           priority={true}
-          alt='creatorImage'
-          className='my-5 w-[380px] rounded-full bg-slate-500/10 shadow-2xl sm:w-[500px] lg:order-last'
+          alt='Kaushal Gupta Photo'
+          className='my-5 w-[380px] rounded-full bg-slate-200/5 shadow-lg sm:w-[500px] lg:order-last'
         />
         <div className='m-10 flex flex-col justify-center text-center font-semibold lg:text-left'>
           <div className='text-lg'>Hey there !</div>

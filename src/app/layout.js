@@ -1,6 +1,7 @@
 import {Montserrat} from 'next/font/google';
 import './globals.css';
 import Header from './_Home/header';
+import Footer from './_Home/footer';
 
 const inter = Montserrat({subsets: ['latin']});
 
@@ -13,9 +14,10 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang='en'>
-      <body className={`scroll-smooth ${inter.className} py-14`}>
+      <body className={`scroll-smooth ${inter.className} pt-14`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

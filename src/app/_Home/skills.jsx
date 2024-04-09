@@ -21,8 +21,8 @@ export default function Skills() {
   const skillSet = [
     {name: 'HTML', img: FaHtml5},
     {name: 'CSS', img: FaCss3Alt},
-    {name: 'JavaScript', img: FaJs},
     {name: 'Tailwind', img: BiLogoTailwindCss},
+    {name: 'JavaScript', img: FaJs},
     {name: 'React', img: FaReact},
     {name: 'Node', img: DiNodejs},
     {name: 'Npm', img: DiNpm},
@@ -49,7 +49,7 @@ export default function Skills() {
   }
 
   return (
-    <div className='mt-10 p-5'>
+    <div className='py-20'>
       <div className='mb-7 text-center text-5xl font-semibold'>Skills</div>
       <div className='mx-auto grid grid-cols-2 gap-4 sm:grid-cols-3 md:w-9/12 lg:grid-cols-5'>
         {skillSet.map(getSkillBlock)}

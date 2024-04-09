@@ -27,7 +27,8 @@ export default function BasicModalCarousel(props) {
         sx={{
           display: 'flex',
           alignItems: 'center',
-        }}>
+        }}
+        style={{backdropFilter: 'blur(7px)'}}>
         <>
           <Carousel
             certificates={props.certificate}
